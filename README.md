@@ -11,7 +11,7 @@ domains.txt：支持临时邮箱或无需验证邮箱的机场列表
 
 # 使用指南
 ```bash
-git clone https://github.com/wzdnzd/aggregator.git
+git clone https://github.com/wzdnzd/aggregator.git](https://github.com/ghost331188/aggregator-termux.git
 pip3 install pyYAML tqdm
 cd aggregator
 python -u subscribe/collect.py -si
