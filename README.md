@@ -8,3 +8,10 @@ subscribes.txt：订阅地址列表
 valid-domains.txt：支持免费白嫖的机场列表
 
 domains.txt：支持临时邮箱或无需验证邮箱的机场列表
+
+# 使用指南
+```bash
+git clone https://github.com/wzdnzd/aggregator.git
+pip3 install pyYAML tqdm
+cd aggregator
+python -u subscribe/collect.py -si
