@@ -24,11 +24,8 @@ python -u subscribe/collect.py -su
 -v：允许使用的残余流量。
 -w：覆盖现有机场域名。
 
-运行完成默认输出在data下
+运行完成默认输出在data下：
 proxies.yaml：实际可用的代理节点
-
 subscribes.txt：订阅地址列表
-
 valid-domains.txt：支持免费白嫖的机场列表
-
 domains.txt：支持临时邮箱或无需验证邮箱的机场列表
