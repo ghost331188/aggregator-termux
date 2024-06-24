@@ -6,7 +6,7 @@
 git clone https://github.com/ghost331188/aggregator-termux.git
 pip3 install pyYAML tqdm
 cd aggregator
-python -u subscribe/collect.py -su
+python -u subscribe/collect.py -s
 
 命令行参数：
 -a：生成完整的 clash 配置。
