@@ -1,21 +1,13 @@
 # aggregator-termux
 自动签到、自动注册、订阅聚合及爬取脚本等
 
-proxies.yaml：实际可用的代理节点
-
-subscribes.txt：订阅地址列表
-
-valid-domains.txt：支持免费白嫖的机场列表
-
-domains.txt：支持临时邮箱或无需验证邮箱的机场列表
-
 # 使用指南
 ```bash
 git clone https://github.com/ghost331188/aggregator-termux.git
 pip3 install pyYAML tqdm
 cd aggregator
 python -u subscribe/collect.py -su
-默认输出在data下
+
 命令行参数：
 -a：生成完整的 clash 配置。
 -d：代理节点允许的最大延迟。
@@ -32,3 +24,11 @@ python -u subscribe/collect.py -su
 -v：允许使用的残余流量。
 -w：覆盖现有机场域名。
 
+运行完成默认输出在data下
+proxies.yaml：实际可用的代理节点
+
+subscribes.txt：订阅地址列表
+
+valid-domains.txt：支持免费白嫖的机场列表
+
+domains.txt：支持临时邮箱或无需验证邮箱的机场列表
