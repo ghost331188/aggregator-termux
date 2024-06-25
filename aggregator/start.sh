@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 更新和升级Termux包
-pkg update -y && pkg upgrade -y
+pkg update -y
 
 # 安装Python、pip和虚拟环境包
 pkg install python -y
