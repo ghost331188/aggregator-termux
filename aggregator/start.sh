@@ -7,7 +7,7 @@ pkg update -y && pkg upgrade -y
 pkg install python -y
 pkg install python-pip -y
 
-# 更换pip源为国外源（例如使用清华大学的源）
+# 更换pip源
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 
