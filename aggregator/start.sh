@@ -11,8 +11,6 @@ pkg install python-virtualenv -y
 # 更换pip源为国外源（例如使用清华大学的源）
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-# 克隆仓库
-git clone https://github.com/ghost331188/aggregator-termux.git
 
 # 进入项目目录
 cd aggregator-termux
