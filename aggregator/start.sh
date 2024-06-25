@@ -11,10 +11,11 @@ pkg install python-pip -y
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-# 进入项目目录
-cd aggregator-termux
-
 # 安装依赖
 pip install pyYAML tqdm
 
+# 切换到 aggregator 目录
+cd aggregator
 
+# 运行 Python 脚本
+python3 -u subscribe/collect.py -s
