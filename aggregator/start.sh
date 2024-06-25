@@ -1,10 +1,27 @@
 #!/bin/bash
 
-# 安装 Python 包
-pip3 install PyYAML tqdm
+# 更新和升级Termux包
+pkg update -y && pkg upgrade -y
 
-# 切换到 aggregator 目录
-cd aggregator
+# 安装Python、pip和虚拟环境包
+pkg install python -y
+pkg install python-pip -y
+pkg install python-virtualenv -y
 
-# 运行 Python 脚本
-python3 -u subscribe/collect.py -s
+# 更换pip源为国外源（例如使用清华大学的源）
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 克隆仓库
+git clone https://github.com/ghost331188/aggregator-termux.git
+
+# 进入项目目录
+cd aggregator-termux
+
+# 创建并激活Python虚拟环境
+python3 -m venv venv
+source venv/bin/activate
+
+# 安装依赖
+pip install pyYAML tqdm
+
+
